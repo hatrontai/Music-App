@@ -1,12 +1,3 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-
-const sidebarPlus = $('.sidebar__plus');
-sidebarPlus.onclick = function() {
-    const sidebarPlusBtn = $('.sidebar__plus--btn');
-    sidebarPlusBtn.classList.toggle('active');
-}
-
 const sections = $$('.main-content .section__content')
 sections.forEach((section) => {
     section.addEventListener('mouseover', function() {

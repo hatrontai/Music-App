@@ -1,0 +1,110 @@
+.main-container {
+    width: 100vw;
+    margin-top: 80px;
+    padding: 4px;
+    display: flex;
+}
+
+.sidebar {
+    width: 24vw;
+    background-color: var(--gray);
+    margin: 0 0.4vw;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* MAIN CONTENT PLAY YOUR MUSIC */
+.main-content {
+    width: 52vw;
+    background-color: var(--gray);
+    margin-right: 0.4vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 48px 32px;
+    margin-bottom: 24px;
+    background-color: var(--light_gray);
+    border-radius: 8px 8px 0 0;
+}
+
+.content__header--background {
+    width: 180px;
+    height: 180px;
+    background-color: var(--light_gray);
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    background-position: center;
+    margin-right: 24px;
+}
+
+.content__header--info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.content__header--info p {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.content__header--song-name {
+    font-size:  4vw;
+    font-weight: bold;
+}
+
+.content__header--data, .content__data--release {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.content__data--author {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.content__data--author:hover {
+    text-decoration: underline;
+}
+
+.content__data--release span::before {
+    content: "•";
+    margin-right: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* PLAY VIEW YOUR MUSIC */
+.play-view {
+    width: 24vw;
+    background-color: var(--gray);
+    margin-right: 0.4vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PLAYER CONTROL THE MUSIC */
+.player {
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}

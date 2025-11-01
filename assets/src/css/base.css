@@ -10,11 +10,13 @@
 }
 
 :root {
+    --transparent: rgba(0, 0, 0, 0);
     --muted: #b3b3b3;
     --white: #ececece8;
     --gray: #151515f4;
     --light_gray: #323131e3;
     --green: #18a048eb;
+    --light_green: #17be52;
 }
 
 html {

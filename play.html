@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sportify</title>
+    <title>My Sportify - Web Player</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -96,14 +96,32 @@
             </div>
             <div class="content__play">
                 <div class="content__play--box">
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
+                    <div class="content__play--btn">
+                        <i class="fa-solid fa-play"></i>
+                        <!-- <i class="fa-solid fa-pause"></i> -->
+                    </div>
+                    <div class="content__play--save"><i class="fa-solid fa-plus"></i></div>
+                    <div class="content__play--download"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="content__play--options"><i class="fa-solid fa-ellipsis"></i></div>
                 </div>
                 <div class="content__play--lyrics">
                     <h2 class="content__lyrics--title">Lyrics</h2>
-                    <p></p>
+                    <p class="content__lyrics--text">
+                        Yeah <br>
+                        Huh <br>
+                        Notification trên Insta <br>
+                        Thêm mấy like từ một tài khoản verified <br>
+                        It's a typical rapper profile <br>
+                        Chắc đang kiếm người tâm sự hoặc chịch dạo <br>
+                        Nhanh trí bé share tẹo meme (meme) <br>
+                        Hắn rep ngay story là, "Hehe" (hehe) <br>
+                        Bảo gái xinh như em lại thức khuya thế nhỉ? <br>
+                        Vậy đang uh làm gì? (Làm gì?) <br>
+                        "Bé là trap girl certified <br>
+                        Anh vẫn muốn đâm và-a-a-a-ào sao?" <br>
+                        Chắc đang kiếm chút idea để làm nhạc <br>
+                    </p>
+                    <span class="content__lyrics--more">...Show more</span>
                 </div>
             </div>
             <div class="content__author">
@@ -132,17 +150,20 @@
         <div class="player__song">
             <div class="player__song--background" style="background-image: url(./assets/image/image1.jpg);"></div>
             <div class="player__song--info">
-                p.player__song--name
+                <p class="player__song--name"></p>
                 <p class="player__song--author"></p>
             </div>
         </div>
         <div class="player__play">
             <div class="player__play--box">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+                <div class="player__play--shuffle"><i class="fa-solid fa-shuffle"></i></div>
+                <div class="player__play--prev"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="player__play--btn">
+                    <i class="fa-solid fa-play"></i>
+                    <!-- <i class="fa-solid fa-pause"></i> -->
+                </div>
+                <div class="player__play--next"><i class="fa-solid fa-forward-step"></i></div>
+                <div class="player__play--repeat"><i class="fa-solid fa-repeat"></i></div>
             </div>
             <div class="player__play--bar">
 
@@ -156,7 +177,7 @@
         </div>
     </div>
 
-
+    <script src="./assets/src/js/main.js"></script>
     <script src="./assets/src/js/play.js"></script>
 </body>
 </html>

@@ -106,7 +106,6 @@ header {
 
 .header__btn  button{
     /* background-color: var(--gray); */
-    padding: 16px 24px;
     border-radius: 30px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -122,10 +121,16 @@ header {
 
 .btn__install, .btn__signup {
     background-color: black;
+    padding: 0 24px;
 }
 
 .btn__login {
     background-color: var(--gray);
+    padding: 16px 24px;
+}
+
+.btn__login:hover {
+    background-color: var(--light_gray);
 }
 
 /* SIDEBAR */

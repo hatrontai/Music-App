@@ -16,7 +16,7 @@
 /* MAIN CONTENT PLAY YOUR MUSIC */
 .main-content {
     width: 52vw;
-    background-color: var(--gray);
+    background: linear-gradient(var(--light_gray), var(--gray));
     margin-right: 0.4vw;
     border-radius: 8px;
     display: flex;
@@ -28,16 +28,17 @@
     width: 100%;
     height: auto;
     align-items: center;
-    padding: 48px 32px;
+    padding: 24px 32px;
     margin-bottom: 24px;
-    background-color: var(--light_gray);
+    background: linear-gradient(to right, var(--light_gray), var(--gray));
     border-radius: 8px 8px 0 0;
 }
 
 .content__header--background {
     width: 180px;
     height: 180px;
-    background-color: var(--light_gray);
+    /* background-color: var(--light_gray); */
+    box-shadow: 16px 16px 16px rgba(22, 22, 22, 0.397);
     border-radius: 4px;
     transition: transform 0.3s ease;
     background-position: center;
@@ -83,6 +84,111 @@
     font-size: 1.6rem;
     font-weight: 700;
 }
+
+.content__play {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content__play--box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 24px;
+}
+
+.content__play--btn {
+    width: 60px;
+    height: 60px;
+    background-color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content__play--btn i {
+    /* transform: translateX(50%); */
+    color: black;
+    font-size: 2.4rem;
+    /* display: none; */
+}
+
+.content__play--btn:hover {
+    transform: scale(1.05);
+    background-color: var(--light_green);
+}
+
+.content__play--save, .content__play--download {
+    width: 32px;
+    height: 32px;
+    background-color: var(--transparent);
+    border: 3px solid var(--muted);
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.content__play--save:hover, .content__play--download:hover {
+    border: 3px solid var(--white);
+    transform: scale(1.1);
+}
+
+.content__play--options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.content__play--options:hover {
+    transform: scale(1.1);
+}
+
+.content__play--save:hover i, .content__play--download:hover i, .content__play--options:hover i {
+    color: var(--white);
+}
+
+.content__play--lyrics {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 24px;
+    margin-top: 12px;
+}
+
+.content__lyrics--title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.content__lyrics--text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.content__lyrics--more {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white);
+    cursor: pointer;
+    transition: transform 0.3s ease
+}
+
 
 /* PLAY VIEW YOUR MUSIC */
 .play-view {

@@ -369,6 +369,14 @@
     transition: width 0.1s linear;
 }
 
+.player__progress--current,
+.player__progress--duration {
+    color: var(--muted);
+    width: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
 .player__tool {
     width: 24vw;
 }

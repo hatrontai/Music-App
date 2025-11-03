@@ -126,14 +126,14 @@
             </div>
             <div class="content__author">
                 <div class="content__author--profile">
-                    <div class="content__author--background"></div>
+                    <div class="content__author--background" style="background-image: url(./assets/image/lowg.jpg);"></div>
                     <div class="content__author--name">
                         <h2>LowG</h2>
                         <p>Artist</p>
                     </div>
                 </div>
                 <div class="content__author--profile">
-                    <div class="content__author--background"></div>
+                    <div class="content__author--background" style="background-image: url('./assets/image/tlinh.jpg');"></div>
                     <div class="content__author--name">
                         <h2>tlinh</h2>
                         <p>Artist</p>
@@ -150,11 +150,18 @@
         <div class="player__song">
             <div class="player__song--background" style="background-image: url(./assets/image/image1.jpg);"></div>
             <div class="player__song--info">
-                <p class="player__song--name"></p>
-                <p class="player__song--author"></p>
+                <p class="player__song--name">Love Game</p>
+                <div class="player__song--author">
+                    <p class="player__author--name">LowG, </p>
+                    <p class="player__author--name">tlinh</p>
+                </div>
             </div>
+            <div class="player__song--save"><i class="fa-solid fa-plus"></i></div>
         </div>
         <div class="player__play">
+            <div>
+                <audio id="audio" src="./assets/audio/LowG_Love_Game.mp3"></audio>
+            </div>
             <div class="player__play--box">
                 <div class="player__play--shuffle"><i class="fa-solid fa-shuffle"></i></div>
                 <div class="player__play--prev"><i class="fa-solid fa-backward-step"></i></div>
@@ -165,8 +172,12 @@
                 <div class="player__play--next"><i class="fa-solid fa-forward-step"></i></div>
                 <div class="player__play--repeat"><i class="fa-solid fa-repeat"></i></div>
             </div>
-            <div class="player__play--bar">
-
+            <div class="player__play--progress">
+                <span id="player__progress--current">0:00</span>
+                <div class="player__progress--bar">
+                    <div class="progress"></div>
+                </div>
+                <span id="player__progress--duration">3:25</span>
             </div>
         </div>
         <div class="player__tool">

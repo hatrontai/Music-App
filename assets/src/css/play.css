@@ -379,4 +379,39 @@
 
 .player__tool {
     width: 24vw;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 24px;
+    font-size: 1.6rem;
+}
+
+.player__tool--lyric:hover, .player__tool--queue:hover, .player__tool--connect:hover, .player__tool--volume:hover {
+   cursor: pointer;
+}
+
+.player__tool--volume {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.player__volume--bar {
+    width: 100%;
+    height: 6px;
+    background-color: var(--light_gray);
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.player__volume--bar .volume {
+    background: linear-gradient(to right, var(--green), var(--light_green));
+    height: 100%;
+    width: 90%;
+    border-radius: 3px;
+    transition: width 0.1s linear;
 }

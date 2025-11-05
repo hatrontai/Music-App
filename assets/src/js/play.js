@@ -1,5 +1,6 @@
 const playBtns = $$('.fa-solid.fa-play')
 const audio = document.getElementById('audio')
+const volume = $('.player__volume--bar volume')
 
 function updateTimeDisplay() {
     const currentTime = audio.currentTime;
@@ -10,6 +11,19 @@ function updateTimeDisplay() {
     const durationSeconds = Math.floor(duration % 60);
     $('.player__progress--current').textContent = `${currentMinutes}:${currentSeconds < 10 ? `0${currentSeconds}` : currentSeconds}`;
     $('.player__progress--duration').textContent = `${durationMinutes}:${durationSeconds < 10 ? `0${durationSeconds}` : durationSeconds}`;
+}
+
+function updateVolume() {
+    const volumeBar = $('.player__volume--bar');
+    audio.volume = volume.style.width / volumeBar.offsetWidth;
+    const volumeIcon = $('.player__tool--volume i');
+    if (audio.volume < 0.5) {
+        volumeIcon.classList.remove('fa-volume-high');
+        volumeIcon.classList.add('fa-volume-low');
+    } else {
+        volumeIcon.classList.remove('fa-volume-low');
+        volumeIcon.classList.add('fa-volume-high');
+    }
 }
 
 playBtns.forEach((btn) => {
@@ -44,3 +58,5 @@ audio.addEventListener('timeupdate', () => {
     }
 });
 
+volume.addEventListener('input', updateVolume);
+updateVolume();

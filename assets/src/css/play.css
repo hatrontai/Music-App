@@ -411,7 +411,7 @@
 .player__volume--bar .volume {
     background: linear-gradient(to right, var(--green), var(--light_green));
     height: 100%;
-    width: 90%;
+    width: 40%;
     border-radius: 3px;
     transition: width 0.1s linear;
 }
